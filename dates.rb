@@ -11,7 +11,7 @@ fall_2019_wednesdays = (fall_2019_start..fall_2019_end).to_a.select{|k| k.wday =
 spring_2020_wednesdays = (spring_2020_start..spring_2020_end).to_a.select{|k| k.wday == 3}
  
 puts "Fall 2019"
-fall_2019_wednesdays.map{|date| puts date.to_s}
+fall_2019_wednesdays.map{|date| puts date.strftime('%B %d, %Y')}
  
 puts "\nSpring 2020"
-spring_2020_wednesdays.map{|date| puts date.to_s}
+spring_2020_wednesdays.map{|date| puts date.strftime('%B %d, %Y')}
